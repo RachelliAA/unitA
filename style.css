@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #2b3856;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b3856;
+}
+.logo span {
+    color: #ff6f61;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    color: #ff6f61;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.search-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff6f61;
+    font-size: 18px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    color: #888;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-icons a:hover {
+    color: #ff6f61;
+}
+.subheader {
+    padding: 10px 20px;
+    background-color: #2b3856;
+    color: #fff;
+}
+.breadcrumb {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #555;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    text-decoration: none;
+}
+.social-icons img,
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+.social-icons i {
+    font-size: 24px;
+    color: #4267B2; /* Facebook blue */
+}
+
