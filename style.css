@@ -106,3 +106,36 @@ header {
     color: #4267B2; /* Facebook blue */
 }
 
+
+.sidebar {
+    position: sticky;
+    top: 100px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    height: 1000px;
+}
+
+.sidebar nav ul {
+    
+    list-style-type: none;
+    display: block;
+    gap: 20px;
+    padding: 20px;
+    background-color: #e6eefb;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.2em;
+    display: inline-block;
+}
+hr {
+    border: none;
+    height: 2px; /* Thickness of the line */
+    width: 50px; /* Length of the line */
+    background-color: #ccc; /* Adjust color as needed */
+    margin: 20px auto; /* Center the line horizontally */
+}
