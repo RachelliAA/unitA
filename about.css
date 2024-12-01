@@ -1,0 +1,47 @@
+/* Basic styles for the grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for each food item */
+.food-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: block; /* Show all items by default */
+}
+
+/* Make the selected item visible using :target */
+.food-item:target {
+  display: block;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+/* Hide the non-targeted items by default */
+.food-item:not(:target) {
+  display: none;
+}
+
+/* Show all items when 'All' is clicked */
+#all:target ~ .image-grid .food-item {
+  display: block;
+}
+
+/* Specific category filters when a category is targeted */
+#dairy:target ~ .image-grid .food-item:not(.dairy) {
+  display: none;
+}
+#cakes:target ~ .image-grid .food-item:not(.cakes) {
+  display: none;
+}
+#meat:target ~ .image-grid .food-item:not(.meat) {
+  display: none;
+}
