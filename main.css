@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html {
+    scroll-padding-top: 70px; /* Same as header height */
+  }
   body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -15,12 +17,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8B4513;
+    background-color: #f93cad;
     color: white;
     padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    
   }
   
   .logo {
@@ -194,6 +197,7 @@
     font-size: 20px;
   }
   
+  /*tablet*/
   @media (max-width: 600px) {
     .social-icons a {
         width: 20px; /* Smaller size for phones */
@@ -202,12 +206,44 @@
         font-size: 16px; /* Adjust icon font size */
         margin: 0 3px; /* Reduce spacing between icons */
     }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Set 5 columns */
+      gap: 15px;
+      margin-top: 15px;
+    }
 }
+/*phone*/
 @media (max-width: 400px) {
   .category-button {
-    size
+    width: 100px; /* Smaller width */
+    height: 30px; /* Smaller height */
+    font-size: 12px; /* Smaller font size */
+    padding: 5px; /* Adjust padding */
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Set 5 columns */
+    gap: 10px;
+    margin-top: 10px;
+  }
+   .header { 
+    display:flex;
+    /* flex-direction: column; 
+    align-items: flex-start; */
+   } 
+   .food-item {
+    min-width: 100;
+    
   }
 }
+
+@media (max-width: 899px) and (min-width: 600px) { 
+  .image-grid {
+     grid-template-columns: repeat(3, 1fr);
+     }
+    }
+
   /* @media (max-width: 768px) {
     .categories {
         flex-direction: column;
