@@ -8,15 +8,16 @@ body {
 }
 
 header {
-    background-color: #8B4513;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f93cad; 
+  }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+  
 }
 
 .container {
@@ -35,7 +36,7 @@ header h1 {
 }
 
 h2 {
-   color: #8B4513;
+   color: #f93cad;
 
 }
 
@@ -71,15 +72,69 @@ h2 {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #8B4513;
+    color: #f93cad;
     font-weight: bold;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    color: #8B4513;
+    color: #f93cad;
     color: #fff;
     margin-top: 20px;
     border-radius: 10px 10px 0 0;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f93cad;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .back-button {
+    margin-right: 20px; /* Spacing between button and title */
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #000;
+    background-color: #f8f8f8;;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  /* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the fade-in animation to the video and link */
+  .video iframe,
+  .video a {
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 2s ease-out forwards; /* Apply fade-in effect */
+  }
+  
+  .video iframe {
+    animation-delay: 0.5s; /* Delay animation for the iframe */
+  }
+  
+  .video a {
+    animation-delay: 1s; /* Delay animation for the link */
+  }

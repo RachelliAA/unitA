@@ -13,7 +13,8 @@
     <h3>Navigation</h3>
     <a href="#about-me">About Me</a>
     <a href="#conversion-table">Conversion Table</a>
-    <a href="#useful-tips">Useful Cooking Tips</a>
+    <a href="#useful-tips">Useful Cooking Tips</a>   
+    <a href="#form-container">Request a Recipe</a>   
     <a href="main.html" target="_blank">Back to Recipes</a>
   </div>
 
@@ -93,7 +94,40 @@
           <li><strong>Cooking at high altitudes:</strong> Cooking times and ingredient measurements may need adjustments at high altitudes.</li>
         </ul>
       </div>
-    </div>
+    
+
+   <!-- Recipe Request Form Section -->
+<div class="form-container" id="form-container">
+  <h2>Request a Recipe</h2>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+    
+    <label for="recipe-type">Preferred Recipe Type:</label>
+    <select id="recipe-type" name="recipe-type" required>
+      <option value="dairy">Dairy</option>
+      <option value="meat">Meat</option>
+      <option value="pareve">Pareve</option>
+    </select>
+    
+    <label for="main-ingredient">Main Ingredient:</label>
+    <input type="text" id="main-ingredient" name="main-ingredient" required placeholder="Enter the main ingredient">
+    
+    <label for="time">Time to Make (in minutes):</label>
+    <input type="number" id="time" name="time" required placeholder="Enter the time to make the recipe" min="1">
+    
+    <label for="special-requests">Special Requests:</label>
+    <textarea id="special-requests" name="special-requests" placeholder="Any special requests or preferences?" rows="4"></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</div>
+
+
 
     <!-- Back to Recipes Link -->
     <div class="back-to-recipes">

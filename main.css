@@ -176,7 +176,10 @@
   .stars {
     font-size: 15px;
     color: gold;
-    /*position: relative;*/
+    transition: transform 0.3s,  0.3s;
+  }
+  .stars:hover {
+    transform: scale(1.2); /* Makes the stars grow */
   }
   
   footer {
@@ -188,7 +191,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: green;
+    background-color: #f93cad;
     color: white;
     border: none;
     padding: 10px;
