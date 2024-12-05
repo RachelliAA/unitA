@@ -109,7 +109,12 @@
     margin-top: 20px;
   }
   
-  
+  .image-grid a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
   .food-item {
     background-color: white;
     border-radius: 10px;
@@ -117,7 +122,6 @@
     overflow: hidden;
     transition: transform 0.3s;
     min-width: 400;
-    
   }
   
   .food-item:hover {
@@ -167,8 +171,9 @@
   }
   
   .stars {
-    font-size: 18px;
+    font-size: 15px;
     color: gold;
+    /*position: relative;*/
   }
   
   footer {
