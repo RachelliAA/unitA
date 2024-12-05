@@ -1,0 +1,183 @@
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #f93cad;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 200px;
+      background-color: #f93cadb2;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #444;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+    }
+
+    /* Main content section */
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    /* Flexbox layout for the main sections */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    /* Grid for the table */
+    .table-container {
+      flex: 1 1 100%;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    td {
+      background-color: #fafafa;
+    }
+
+    /* Section for lists (Flexbox) */
+    .info-container {
+      flex: 1 1 100%;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background-color: #f4f4f4;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 1.1em;
+    }
+
+    /* About Me Section */
+    .about-me-container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    .about-me-container h2 {
+      margin-top: 0;
+    }
+
+    /* Add styles for the image */
+    .about-me-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%; /* Makes the image circular */
+      border: 5px solid #333; /* Adds a border around the image */
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    video {
+      max-width: 100%;
+      height: 700px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+    }
+
+    /* Back to Recipes Link */
+    .back-to-recipes {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .back-to-recipes a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+
+    .back-to-recipes a:hover {
+      background-color: #ccc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+      }
+      .main-content {
+        margin-left: 0;
+      }
+    }
