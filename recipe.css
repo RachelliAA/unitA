@@ -112,3 +112,29 @@ footer {
     background-color: #0056b3;
   }
   
+
+
+  /* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the fade-in animation to the video and link */
+  .video iframe,
+  .video a {
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 2s ease-out forwards; /* Apply fade-in effect */
+  }
+  
+  .video iframe {
+    animation-delay: 0.5s; /* Delay animation for the iframe */
+  }
+  
+  .video a {
+    animation-delay: 1s; /* Delay animation for the link */
+  }

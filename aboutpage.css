@@ -16,32 +16,37 @@
       width: 100%;
     }
 
-    /* Sidebar styles */
-    .sidebar {
-      width: 200px;
-      background-color: #f93cadb2;
-      color: white;
-      padding: 20px;
-      position: fixed;
-      height: 100%;
-      top: 0;
-      left: 0;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    }
+   /* Sidebar styles */
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #f93cadb2;
+  color: white;
+  padding: 20px;
+  position: fixed;  /* Fixed position to keep it in place */
+  top: 0;  /* Stays at the top of the page */
+  left: 0;  /* Aligns with the left side of the page */
+  height: 100%;  /* Full height of the page */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
 
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      background-color: #444;
-      border-radius: 4px;
-    }
+/* Sidebar link styles */
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 4px;
+  
+}
 
-    .sidebar a:hover {
-      background-color: #555;
-    }
+.sidebar a:hover {
+  background-color: #555;
+}
+
 
     /* Main content section */
     .main-content {

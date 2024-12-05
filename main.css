@@ -176,7 +176,10 @@
   .stars {
     font-size: 15px;
     color: gold;
-    /*position: relative;*/
+    transition: transform 0.3s,  0.3s;
+  }
+  .stars:hover {
+    transform: scale(1.2); /* Makes the stars grow */
   }
   
   footer {
