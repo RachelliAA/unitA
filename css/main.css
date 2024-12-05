@@ -247,4 +247,20 @@
      }
     }
 
+  /* @media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 120px; /* Smaller margin for mobile screens 
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+   
+  
+} */
